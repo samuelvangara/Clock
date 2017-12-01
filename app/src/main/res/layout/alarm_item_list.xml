@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#4AFFFFFF">
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:text="Hello"
+        android:textSize="25sp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+    <EditText
+        android:id="@+id/Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:text="Hello"
+        android:textSize="15sp"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignStart="@+id/task_title" />
+
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ask_delete"
+        android:clickable="true"
+        android:onClick="deleteTask"
+        android:layout_alignTop="@+id/task_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox2"
+        android:layout_toStartOf="@+id/ask_delete" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibrate"
+        android:layout_below="@+id/ask_delete"
+        android:layout_toStartOf="@+id/switch1" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeat"
+        android:layout_below="@+id/task_title"
+        android:layout_toEndOf="@+id/Label" />
+
+</RelativeLayout>

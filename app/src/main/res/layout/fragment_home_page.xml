@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="foxycorp.alarminator.HomePage$PlaceholderFragment">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/alarmList"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sample Data"
+    android:textColor="@android:color/black"
+    android:textSize="25dp"
+    android:elevation="14dp"
+    android:translationZ="24dp"
+    android:textAlignment="center"
+    android:background="#4AFFFFFF"
+    android:id="@+id/text"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/homefab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="22dp"
+        app:pressedTranslationZ="24dp"
+        android:layout_gravity="top|center_horizontal"
+        app:layout_anchor="@+id/container"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        app:backgroundTint="#8e0000"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/plus"
+        android:onClick="setContentView"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/home_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:elevation="22dp"
+        app:pressedTranslationZ="24dp"
+        android:layout_gravity="top|center_horizontal"
+        app:layout_anchor="@+id/container"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        app:backgroundTint="#8e0000"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/reminder"
+        android:onClick="setContentView"
+        android:layout_marginBottom="13dp"
+        app:fabSize="mini"
+        android:layout_above="@+id/homefab"
+        android:layout_alignLeft="@+id/homefab"
+        android:layout_alignStart="@+id/homefab"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/home_alarm"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="22dp"
+        app:pressedTranslationZ="24dp"
+        android:layout_gravity="top|center_horizontal"
+        app:layout_anchor="@+id/container"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        app:backgroundTint="#8e0000"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/alarm"
+        android:onClick="setContentView"
+        android:layout_above="@+id/home_reminder"
+        android:layout_alignLeft="@+id/home_reminder"
+        android:layout_alignStart="@+id/home_reminder"
+        android:layout_marginBottom="11dp"
+        app:fabSize="mini"/>
+
+    <TextView
+        android:id="@+id/test1"
+        android:text="Set an Alarm"
+        android:elevation="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignBottom="@+id/home_alarm"
+        android:layout_toLeftOf="@+id/home_reminder"
+        android:layout_toStartOf="@+id/home_reminder"
+        android:layout_marginBottom="11dp"
+        android:visibility="invisible"/>
+    <TextView
+        android:elegantTextHeight="true"
+        android:id="@+id/test2"
+        android:elevation="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set a Reminder"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        android:layout_below="@+id/home_alarm"
+        android:layout_toLeftOf="@+id/home_reminder"
+        android:layout_toStartOf="@+id/home_reminder"
+        android:layout_marginTop="11dp" />
+</RelativeLayout>

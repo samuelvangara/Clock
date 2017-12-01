@@ -1,0 +1,32 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/alarm"/>
+
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/alarm" />
+
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/clock" />
+
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/clock" />
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/stopwatch" />
+
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/stopwatch" />
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/timer" />
+
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/timer" />
+
+</selector>
